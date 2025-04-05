@@ -1,0 +1,44 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f7f7f7;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+header {
+  background: #c62828;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.controls {
+  padding: 15px;
+  background: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+label {
+  font-weight: bold;
+}
+
+input, select {
+  padding: 5px;
+}
+
+#earthquakeList {
+  list-style: none;
+  padding: 0 20px;
+}
+
+#earthquakeList li {
+  background: #fff;
+  margin: 10px 0;
+  padding: 15px;
+  border-left: 5px solid #c62828;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
