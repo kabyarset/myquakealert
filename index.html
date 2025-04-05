@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>QuakeAlert</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>QuakeAlert</h1>
+    <p>Real-time earthquake detection and alerts that save lives.</p>
+  </header>
+
+  <section class="controls">
+    <label for="countryFilter">Filter by Country:</label>
+    <input type="text" id="countryFilter" placeholder="e.g. Myanmar">
+
+    <label for="magnitudeSort">Sort by Magnitude:</label>
+    <select id="magnitudeSort">
+      <option value="none">None</option>
+      <option value="high">High to Low</option>
+      <option value="low">Low to High</option>
+    </select>
+
+    <label for="timeRange">Time Range:</label>
+    <select id="timeRange">
+      <option value="week">Last 7 Days</option>
+      <option value="month">Last 30 Days</option>
+      <option value="3months">Last 3 Months</option>
+      <option value="6months">Last 6 Months</option>
+      <option value="year">Last 1 Year</option>
+    </select>
+  </section>
+
+  <section>
+    <ul id="earthquakeList"></ul>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
